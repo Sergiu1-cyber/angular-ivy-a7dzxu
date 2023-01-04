@@ -1,6 +1,10 @@
 <hello class="w3-text-red" name="{{ name }}"></hello>
 
-<app-products></app-products>
+<app-products
+  (titleEvent)="setName($event)"
+></app-products>
+
+
 <p>
   Start editing to see some magic happen :)
 </p>
